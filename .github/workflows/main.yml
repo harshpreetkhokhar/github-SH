@@ -23,12 +23,12 @@ jobs:
         env: 
           Secret: ${{secrets.key}}
         run: echo "my secret is $Secret"
-      
-  ALWAYs:
+          
+  ALWAYS:
      runs-on: ubuntu-latest
-     needs:
-     if: ${{ always() }}
-       
+     
+     if: ${{always()}}
+     needs: Python
      steps:
       - name: print
         run: echo"this will always run"
