@@ -24,7 +24,7 @@ jobs:
           Secret: ${{secrets.key}}
         run: echo "my secret is $Secret"
       
-    ALWAY:
+  ALWAYs:
      runs-on: ubuntu-latest
      needs:
      if: ${{ always() }}
