@@ -1,0 +1,20 @@
+name: run_Python
+
+on:
+  workflow_dispatch
+  
+
+jobs:
+  PYTHON:
+    runs-on: ubuntu-latest
+
+
+    steps:
+      -name: python checkout
+       uses: actions/checkout@v2
+
+      -name: setup
+       uses: actions/setup-python@v2
+
+      -name: run
+       runs: python try.py
