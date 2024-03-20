@@ -17,7 +17,7 @@ jobs:
         uses: actions/setup-python@v2
 
       - name: run
-        run: python try1.py
+        run: python try.py
 
       - name: secret
         env: 
